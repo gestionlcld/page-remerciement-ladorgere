@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Merci pour votre demande !</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fff8f3;
+      color: #333;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    h1 {
+      color: #e57c23;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2em;
+      margin: 15px 0;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 25px;
+      background-color: #e57c23;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    a.button:hover {
+      background-color: #d46c16;
+    }
+  </style>
+
+  <!-- Lottie animation -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <!-- Confettis -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    window.onload = () => {
+      confetti({
+        particleCount: 120,
+        spread: 90,
+        origin: { y: 0.6 }
+      });
+    };
+  </script>
+</head>
+<body>
+
+  <h1>🎉 Merci pour votre demande !</h1>
+
+  <!-- Animation contrat signé -->
+  <lottie-player 
+    src="https://assets10.lottiefiles.com/packages/lf20_gjmecwii.json"  
+    background="transparent"  
+    speed="1"  
+    style="width: 180px; height: 180px; margin: 0 auto;"  
+    loop  
+    autoplay>
+  </lottie-player>
+
+  <p><strong>Eh non… c’était pas le dernier clic 😏</strong></p>
+  <p>Votre contrat est en route ! Vous allez le recevoir d’ici quelques minutes pour signature électronique 📝</p>
+
+  <hr style="margin:30px 0; border:none; border-top:1px solid #ddd; width:80%;" />
+
+  <p>🛌 Et si vous avez envie de prolonger l’expérience…</p>
+  <p>Un gîte tout confort est disponible sur place, et peut être réservé directement via Airbnb :</p>
+  
+  <a class="button" href="https://www.airbnb.fr/rooms/1156635747279620243?guests=9&adults=9&s=67&unique_share_id=89c0add4-ffac-4e2c-940b-45453ddfd27c&source_impression_id=p3_1743118245_P3IOtsMhxJdLzHUc" target="_blank">
+    Voir le gîte sur Airbnb
+  </a>
+
+  <hr style="margin:30px 0; border:none; border-top:1px solid #ddd; width:80%;" />
+
+  <p>📩 Une question ? Un doute ? On est là !</p>
+  <p>
+    <strong>Contact :</strong><br>
+    ✉️ <a href="mailto:contact@la-dorgere.fr">contact@la-dorgere.fr</a><br>
+    📞 <a href="tel:+33786865996">07 86 86 59 96</a>
+  </p>
+
+</body>
+</html>
